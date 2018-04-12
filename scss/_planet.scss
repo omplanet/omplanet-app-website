@@ -1,0 +1,69 @@
+// Custom styles for the three.js geometry animation
+
+#planet_container {
+  background-color: #43147D;
+  width:100%;
+  height:100%;
+}
+
+#planet_container .bg {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+    background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+    background:radial-gradient(ellipse at center,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=1 );
+    opacity:.5;
+    transition:opacity 4s cubic-bezier(.16,1,.22,1) .5s;
+    -webkit-transition:opacity 4s cubic-bezier(.16,1,.22,1) .5s
+}
+
+#canvas_three {
+    height:100%;
+    width:100%;
+    z-index:0;
+
+    opacity:.0;
+    transform:scale(.3);
+    -webkit-transform:scale(.3);
+}
+
+#canvas_three.animated {
+    opacity:.4;
+    transform:scale(.8);
+    -webkit-transform:scale(.8);
+
+    transition:all 3s cubic-bezier(.2,1,.4,.8) 0.0s;
+    -webkit-transition:all 3s cubic-bezier(.2,1,.4,.8) 0.0s;
+}
+
+#planet_container .planet_name {
+    position:absolute;
+    text-align: center;
+    left:50%;
+    width:280px;
+    height:30px;
+    margin:-15px 0 0 -140px;
+    z-index:101;
+}
+
+#planet_container .planet_name.top {
+    top:25%;
+}
+
+#planet_container .planet_name.bottom {
+    bottom:20%;
+}
+
+#planet_container h2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: rgba(255,255,255, .8);
+}
