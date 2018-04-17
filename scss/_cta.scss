@@ -9,7 +9,7 @@ section.cta {
         position: relative;
         z-index: 1;
         h2 {
-            font-size: 50px;
+            font-size: 16px;
             max-width: 450px;
             margin-top: 0;
             margin-bottom: 25px;
@@ -17,7 +17,7 @@ section.cta {
         }
         @media (min-width: 768px) {
             h2 {
-                font-size: 80px;
+                font-size: 22px;
             }
         }
     }

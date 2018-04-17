@@ -14,10 +14,11 @@
     right:0;
     bottom:0;
 
+    opacity:.6;
+
     background:-moz-radial-gradient(center,ellipse cover,rgba(255,255,255,0.6) 0,rgba(0,0,0,0) 60%);
     background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,0.6) 0,rgba(0,0,0,0) 60%);
     background:radial-gradient(ellipse at center,rgba(255,255,255,0.6) 0,rgba(0,0,0,0) 60%);
-    opacity:.6;
 }
 
 #planet_container .bg2 {
@@ -65,19 +66,17 @@
     height:30px;
     margin:-15px 0 0 -140px;
     z-index:101;
-}
-
-#planet_container .planet_name.top {
-    top:25%;
-}
-
-#planet_container .planet_name.bottom {
     bottom:18%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: rgba(255,255,255, .9);
 }
 
-#planet_container h2 {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    color: rgba(255,255,255, .9);
+#planet_container .planet-title {
+    font-size: 1.25rem;
+}
+
+#planet_container .planet-subtitle {
+    font-size: 1rem;
 }
