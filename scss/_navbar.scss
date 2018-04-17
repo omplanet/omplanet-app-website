@@ -60,7 +60,7 @@
             border-color: fade-out($gray-darker, .9);
             background-color: white;
             .navbar-brand {
-                color: $gray-darker;
+                color: $theme-secondary;
                 &:hover,
                 &:focus {
                     color: $theme-primary;

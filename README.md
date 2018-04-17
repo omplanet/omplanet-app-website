@@ -1,6 +1,6 @@
-# [OMPlanet - Website for the Mobile Appa](https://startbootstrap.com/template-overviews/new-age/)
+# [OMPlanet App Website](https://startbootstrap.com/template-overviews/new-age/)
 
-[OMPlanet](http://omplanet.net) is a single page website to promote the OMPlanet mobile apps.
+[OMPlanet](http://omplanet.net) is a simple landing page for the OMPlanet mobile apps.
 
 ## Usage
 

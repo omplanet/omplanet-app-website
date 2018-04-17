@@ -1,7 +1,10 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  background-color: #000000;
+  background-image: url(/img/space.svg);
+  background-repeat: repeat-x;
+  background-position: center 0, 0 0, 0 0;
 }
 
 body {
@@ -56,12 +59,11 @@ section h2 {
 }
 
 #planet_container {
-  background-color: #43147D;
   width: 100%;
   height: 100%;
 }
 
-#planet_container .bg {
+#planet_container .bg1 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -69,13 +71,26 @@ section h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -moz-radial-gradient(center, ellipse cover, transparent 0, black 100%);
-  background: -webkit-radial-gradient(center, ellipse cover, transparent 0, black 100%);
-  background: radial-gradient(ellipse at center, transparent 0, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=1 );
-  opacity: .5;
-  transition: opacity 4s cubic-bezier(0.16, 1, 0.22, 1) 0.5s;
-  -webkit-transition: opacity 4s cubic-bezier(0.16, 1, 0.22, 1) 0.5s;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, transparent 60%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, transparent 60%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6) 0, transparent 60%);
+  opacity: .6;
+}
+
+#planet_container .bg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .6;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  background-image: url(/img/stargate.svg);
+  background-position: center 0, 0 0, 0 0;
+  background-repeat: no-repeat;
 }
 
 #canvas_three {
@@ -88,7 +103,7 @@ section h2 {
 }
 
 #canvas_three.animated {
-  opacity: .4;
+  opacity: .8;
   transform: scale(0.8);
   -webkit-transform: scale(0.8);
   transition: all 3s cubic-bezier(0.2, 1, 0.4, 0.8) 0s;
@@ -110,14 +125,14 @@ section h2 {
 }
 
 #planet_container .planet_name.bottom {
-  bottom: 20%;
+  bottom: 18%;
 }
 
 #planet_container h2 {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #mainNav {
@@ -166,7 +181,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #7b4397;
+  color: #43147D;
 }
 
 #mainNav .navbar-nav > li > a:hover,
@@ -198,14 +213,14 @@ section h2 {
     background-color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #222222;
+    color: #43147D;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
     color: #fdcc52;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #7b4397;
+    color: #43147D;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
@@ -219,9 +234,6 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #43147d);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #43147d);
 }
 
 header.masthead .header-content {
@@ -341,8 +353,8 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-linear-gradient(to left, #7b4397, #43147d);
-  background: linear-gradient(to left, #7b4397, #43147d);
+  background: -webkit-linear-gradient(to left, #43147D, #b49ecb);
+  background: linear-gradient(to left, #43147D, #b49ecb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

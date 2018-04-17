@@ -1,4 +1,4 @@
-// https://github.com/rohitvarkey/three-js/blob/master/threejs/LICENSE
+// Three.js lib, license: https://github.com/rohitvarkey/three-js/blob/master/threejs/LICENSE
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :

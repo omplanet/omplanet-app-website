@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 }, !1)
 
 function init() {
+// Geometric objects used from Three.js lib, sources:
+//   https://github.com/mrdoob/three.js/blob/master/src/geometries/TetrahedronGeometry.js
+//   https://github.com/mrdoob/three.js/blob/master/src/geometries/IcosahedronGeometry.js
+
     (renderer = new THREE.WebGLRenderer({
         antialias: !0,
         alpha: !0
