@@ -1,4 +1,4 @@
-# [OMPlanet App Website](https://startbootstrap.com/template-overviews/new-age/)
+# [OMPlanet App Website](http://omplanet.net/)
 
 [OMPlanet App Website](http://omplanet.net) is a simple landing page for the OMPlanet Android and iOS mobile apps.
 
