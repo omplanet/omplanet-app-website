@@ -1,9 +1,14 @@
 // Styling for the download section
 section.download {
+    background-color: white;
+
     position: relative;
     padding: 150px 0;
+    p {
+        font-size: 12px;
+    }
     h2 {
-        font-size: 50px;
+        font-size: 20px;
         margin-top: 0;
     }
     .badges {
@@ -14,7 +19,7 @@ section.download {
                 margin-bottom: 0;
             }
             img {
-                height: 30px;
+                height: 60px;
             }
             @media(min-width: 768px) {
                 display: inline-block;
@@ -23,8 +28,11 @@ section.download {
         }
     }
     @media(min-width: 768px) {
+        p {
+            font-size: 18px;
+        }
         h2 {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 }

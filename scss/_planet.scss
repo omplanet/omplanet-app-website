@@ -1,4 +1,4 @@
-// Custom styles for the three.js geometry animation
+// Styling for the top section with the three.js geometry animation
 
 #planet_container {
   width:100%;
@@ -62,11 +62,11 @@
     position:absolute;
     text-align: center;
     left:50%;
-    width:280px;
+    width:333px;
     height:30px;
-    margin:-15px 0 0 -140px;
+    margin:-15px 0 0 -166.6px;
     z-index:101;
-    bottom:18%;
+    bottom:17.7%;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -74,9 +74,9 @@
 }
 
 #planet_container .planet-title {
-    font-size: 1.25rem;
+    font-size: 19px;
 }
 
 #planet_container .planet-subtitle {
-    font-size: 1rem;
+    font-size: 12px;
 }

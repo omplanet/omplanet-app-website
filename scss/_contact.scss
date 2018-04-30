@@ -1,7 +1,13 @@
 // Styling for the download section
 section.contact {
+    background-image: url(/img/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-cover;
+
     text-align: center;
     h2 {
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 25px;
         i {
@@ -20,11 +26,11 @@ section.contact {
                 color: white;
                 border-radius: 100%;
             }
-            &.social-twitter {
+            &.social-instagram {
                 a {
-                    background-color: $brand-twitter;
+                    background-color: $brand-instagram;
                     &:hover {
-                        background-color: darken($brand-twitter, 5%);
+                        background-color: darken($brand-instagram, 5%);
                     }
                 }
             }

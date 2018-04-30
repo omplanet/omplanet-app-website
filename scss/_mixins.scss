@@ -12,6 +12,13 @@
     background-size: cover;
 }
 
+@mixin background-contain() {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 @mixin button-variant($color, $background, $border) {
     color: $color;
     border-color: $border;

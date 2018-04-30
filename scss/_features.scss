@@ -1,8 +1,16 @@
 // Styling for the features section
 section.features {
+    background-image: url(/img/bg-features.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-cover;
+
+    color: white;
+
     .section-heading {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
         h2 {
+            font-size: 30px;
             margin-top: 0;
         }
         p {
@@ -21,18 +29,18 @@ section.features {
         }
     }
     .feature-item {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 40px;
+        padding-bottom: 0px;
         text-align: center;
         h3 {
-            font-size: 30px;
+            font-size: 20px;
         }
         i {
             font-size: 80px;
             display: block;
             margin-bottom: 15px;
-            background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+            background: -webkit-linear-gradient(to left, $light-gray, #000);
+            background: linear-gradient(to left, $light-gray, #000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
