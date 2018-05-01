@@ -1,0 +1,27 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
+
+skip_files:
+  - ^\.git/.*
+  - .git/
+  - www/node_modules/
+  - www/scss/
+  - ^(.*/)?.*\README.md$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.gitignore$
+  # Defaults
+  - ^(.*/)?#.*#$
+  - ^(.*/)?.*~$
+  - ^(.*/)?.*\.py[co]$
+  - ^(.*/)?.*/RCS/.*$
+  - ^(.*/)?\..*$
