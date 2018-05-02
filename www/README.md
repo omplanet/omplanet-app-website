@@ -19,7 +19,7 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 - `gulp sass` compiles SCSS files into CSS
 - `gulp minify-css` minifies the compiled CSS file
 - `gulp minify-js` minifies the themes JS file
-- `gulp copy` copies dependencies from node_modules to the vendor directory
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
 ## Copyright and License
 
