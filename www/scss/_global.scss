@@ -4,9 +4,10 @@ body {
     width: 100%;
 
     background-color: #FFFFFF;
-    background-image: url(/img/space.png);
+    background-image: url(/img/space.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     @include background-cover;
 }
 

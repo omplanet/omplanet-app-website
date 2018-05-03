@@ -2,9 +2,10 @@ html,
 body {
   width: 100%;
   background-color: #FFFFFF;
-  background-image: url(/img/space.png);
+  background-image: url(/img/space.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -60,6 +61,37 @@ section {
 
 section h2 {
   font-size: 50px;
+}
+
+#info_container.container-shrink {
+  display: none;
+}
+
+#planet_info {
+  margin-top: 90px;
+  width: 300px;
+  float: right;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  #planet_info {
+    margin-top: 70px;
+  }
+}
+
+#planet_info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  letter-spacing: 1.3px;
+}
+
+#planet_info .solar_system {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  float: left;
 }
 
 #planet_container {
@@ -151,7 +183,7 @@ section h2 {
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
-  color: #fdcc52;
+  color: #43147D;
 }
 
 #mainNav .navbar-nav > li > a {
