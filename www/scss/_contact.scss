@@ -13,9 +13,12 @@ section.contact {
             color: $brand-google-plus;
         }
     }
+    h2.contact-email {
+        margin-left: 16%;
+        margin-bottom:20%;
+    }
     ul.list-social {
-        margin-top: 200px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         li {
             a {
                 font-size: 40px;
