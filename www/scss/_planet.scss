@@ -1,4 +1,8 @@
 // Styling for the top section with the planet and the three.js geometry animation
+#info_container {
+    z-index:0;
+}
+
 #info_container.container-shrink {
     display:none;
 }

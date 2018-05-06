@@ -1,5 +1,6 @@
 // Styling for the navbar
 #mainNav {
+    z-index:1;
     border-color: fade-out($gray-darker, .95);
     background-color: white;
     @include transition-all;
