@@ -461,7 +461,7 @@ section.cta .overlay {
 section.vision {
   background-image: url("../img/bg-vision.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 35% center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
