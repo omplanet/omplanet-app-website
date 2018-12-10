@@ -1,0 +1,180 @@
+section.timeline {
+    background-image: url('../img/bg-timeline.svg');
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-cover;
+
+    position: relative;
+    padding-bottom: 150px;
+
+    h2 {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    .timeline-content {
+        position: relative;
+        z-index: 10;
+        margin-bottom: 60px;
+        text-align: center;
+
+        p {
+            font-size: 14px;
+            max-width: 450px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+        }
+        h2 {
+            font-size: 21px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            margin: auto;
+            background: white;
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+
+        .circle {
+            background: url('../img/solar_system.svg') no-repeat 50% 0;
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .line {
+            width: 1px;
+            height: 100%;
+            margin: auto;
+            background: white;
+            position: relative;
+        }
+
+        .timeline-holder {
+            width: 100%;
+            
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            background: none;
+        }
+
+        .date-box {
+            width: 80px;
+            height: 25px;
+            background: white;
+            position: relative;
+            margin: auto;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .date-txt {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0e0e0e;
+        }
+
+        // Styling for the small screens
+        height: 2000px;
+
+        .timeline-box {
+            width: 110px;
+            color: white;
+            position: relative;
+            margin: auto;
+            background: none;
+        }
+
+        .timeline-left {
+            right: 110px;
+            text-align: right;
+        }
+
+        .timeline-right {
+            left: 110px;
+            text-align: left;
+        }
+
+        .timeline-mid {
+            margin-top: 25px;
+        }
+
+        .timeline-top {
+            margin-top: -35px;
+        }
+
+        .timeline-title {
+            font-size: 11px;
+            line-height: 11px;
+            text-transform: uppercase;
+        }
+
+        .timeline-description {
+            font-size: 10px;
+            font-style: italic;
+        }
+
+        @media (min-width: 768px) {
+            height: 1522px;
+
+            p {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+
+            .timeline-box {
+                width: 400px;
+                color: white;
+                position: relative;
+                margin: auto;
+                background: none;
+            }
+
+            .timeline-left {
+                right: 255px;
+                text-align: right;
+            }
+
+            .timeline-right {
+                left: 255px;
+                text-align: left;
+            }
+
+            .timeline-mid {
+                margin-top: 25px;
+            }
+
+            .timeline-top {
+                margin-top: -35px;
+            }
+
+            .timeline-title {
+                font-size: 18px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+
+            .timeline-description {
+                font-size: 17px;
+                font-style: italic;
+            }
+        }
+    }
+}

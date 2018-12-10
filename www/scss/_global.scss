@@ -4,10 +4,10 @@ body {
     width: 100%;
 
     background-color: #FFFFFF;
-    background-image: url(/img/space.svg);
+    background-image: url(/img/bg-planet.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     @include background-cover;
 }
 
@@ -51,7 +51,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 60px 0;
     h2 {
         font-size: 50px;
     }

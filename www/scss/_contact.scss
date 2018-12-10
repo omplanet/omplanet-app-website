@@ -5,6 +5,8 @@ section.contact {
     background-position: center center;
     @include background-cover;
 
+    padding-top: 360px;
+    padding-bottom: 70px;
     text-align: center;
     h2 {
         font-size: 20px;
@@ -12,10 +14,6 @@ section.contact {
         i {
             color: $brand-google-plus;
         }
-    }
-    h2.contact-email {
-        margin-left: 16%;
-        margin-bottom:20%;
     }
     ul.list-social {
         margin-bottom: 10px;
@@ -53,11 +51,19 @@ section.contact {
                     }
                 }
             }
-            &.social-outer-space {
+            &.social-email {
                 a {
-                    background-color: #334D5C;
+                    background-color: $brand-google-plus;
                     &:hover {
-                        background-color: darken(white, 95%);
+                        background-color: darken($brand-google-plus, 10%);
+                    }
+                }
+            }
+            &.social-omplanet-org {
+                a {
+                    background-color: rgba($theme-primary, 0.5);
+                    &:hover {
+                        background-color: darken($gray, 10%);
                     }
                 }
                 img {

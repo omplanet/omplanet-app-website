@@ -1,22 +1,36 @@
 // Styling for the features section
 section.features {
-    background-image: url(/img/bg-features.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    @include background-cover;
-
+    background-color: $theme-primary;
     color: white;
 
     .section-heading {
         margin-bottom: 10px;
         h2 {
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 0;
         }
         p {
+            font-size: 15px;
             margin-bottom: 0;
         }
     }
+
+    @media(min-width: 992px) {
+        .container {
+            background:-moz-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+            background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+            background:radial-gradient(ellipse at center,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+
     .device-container,
     .feature-item {
         max-width: 325px;
@@ -35,12 +49,16 @@ section.features {
         h3 {
             font-size: 20px;
         }
+        p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
         i {
             font-size: 80px;
             display: block;
             margin-bottom: 15px;
-            background: -webkit-linear-gradient(to left, #aaa, #fff);
-            background: linear-gradient(to left, #aaa, #fff);
+            background: -webkit-linear-gradient(to left, $theme-primary, #fff);
+            background: linear-gradient(to left, $theme-primary, #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

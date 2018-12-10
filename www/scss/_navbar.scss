@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-    z-index:1;
+    z-index:100;
     border-color: fade-out($gray-darker, .95);
     background-color: white;
     @include transition-all;
@@ -15,10 +15,20 @@
             color: darken($theme-primary, 10%);
         }
     }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin-top: 5px;
+        float:left;
+        opacity:.8;
+    }
+
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
-        color: $theme-secondary;
+        color: $theme-primary;
     }
     .navbar-nav {
         > li {

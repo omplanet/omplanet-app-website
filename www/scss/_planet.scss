@@ -23,7 +23,6 @@
 #planet_info p {
     color: rgba(255, 255, 255, .8);
     font-size: 11px;
-    font-family: Lato,Helvetica,Arial,sans-serif;
     letter-spacing: 1.3px;
 }
 
@@ -37,6 +36,7 @@
 #planet_container {
   width:100%;
   height:100%;
+  z-index:101;
 }
 
 #planet_container .bg1 {
@@ -55,19 +55,24 @@
     background:radial-gradient(ellipse at center,rgba(255,255,255,0.6) 0,rgba(0,0,0,0) 60%);
 }
 
+#canvas_container {
+    height:100vh;
+    z-index:0;
+}
+
 #canvas_three {
     height:100%;
     width:100%;
-    z-index:0;
+    z-index:1;
 
     opacity:.0;
     transform:scale(.3);
     -webkit-transform:scale(.3);
 
     background-image: url(/img/stargate.svg);
-    background-position: center;
+    background-position: 50% 50%; // Fix to center the canvas_tree with the background image: 50.1% 49%;
     background-repeat: no-repeat;
-    background-size: 64% 64%;
+    background-size: 62% 62%;
 }
 
 #canvas_three.animated {
@@ -84,20 +89,24 @@
     text-align: center;
     left:50%;
     width:333px;
-    height:30px;
+    height:33px;
     margin:-15px 0 0 -166.6px;
-    z-index:101;
-    bottom:15%;
+    bottom:18%;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    color: rgba(255,255,255, .9);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
 }
 
 #planet_container .planet-title {
-    font-size: 19px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #491D12;
 }
 
 #planet_container .planet-subtitle {
-    font-size: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 4px;
+    text-shadow: 2px 2px 4px #491D12;
 }

@@ -1,0 +1,49 @@
+// Styling for the call to action section
+section.principles {
+    background-color: white;
+
+    position: relative;
+
+    .principles-content {
+        position: relative;
+        z-index: 1;
+        ul li, p {
+            font-size: 14px;
+            max-width: 450px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: $gray-darker;
+        }
+        h2 {
+            font-size: 21px;
+            max-width: 450px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: $theme-primary;
+        }
+        h4 {
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: $gray-darker;
+        }
+        ul.platonic_icons li {
+            display: inline-block;
+            padding: 0 1em 0 0;
+        }
+        .platonic_icons img {
+            height: 35px;
+        }
+        @media (min-width: 768px) {
+            p {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+}
