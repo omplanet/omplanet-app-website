@@ -4,11 +4,14 @@ body {
     width: 100%;
 
     background-color: #FFFFFF;
-    background-image: url(/img/bg-planet.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    @include background-cover;
+
+    @media (min-width: 768px) {
+        background-image: url(/img/bg-planet.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        @include background-cover;
+    } 
 }
 
 body {

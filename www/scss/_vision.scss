@@ -2,7 +2,7 @@
 section.vision {
     background-image: url('../img/bg-vision.jpg');
     background-repeat: no-repeat;
-    background-position: 35% center;
+    background-position: 65% center;
     @include background-cover;
 
     position: relative;
@@ -17,7 +17,7 @@ section.vision {
             padding: 20px;
             color: white;
 
-            background-color: rgba(#707481, .4);
+            background-color: rgba(#707481, .6);
             border-radius: 9px;
         }
         h2 {
@@ -55,6 +55,6 @@ section.vision {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: fade-out(black, .7);
+        background-color: fade-out(black, .9);
     }
 }
