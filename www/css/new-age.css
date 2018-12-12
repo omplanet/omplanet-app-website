@@ -315,7 +315,7 @@ header.masthead .device-container .screen img {
   transform: scale(0.3);
   -webkit-transform: scale(0.3);
   background-image: url(/img/stargate.svg);
-  background-position: 50% 50%;
+  background-position: 50% 49.5%;
   background-repeat: no-repeat;
   background-size: 62% 62%;
 }
