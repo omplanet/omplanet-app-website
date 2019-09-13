@@ -833,31 +833,31 @@ section.faqs .faqs-content {
 }
 
 section.faqs .faqs-content ul li, section.faqs .faqs-content p {
-  font-size: 15px;
+  font-size: 14px;
   max-width: 550px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   color: #222222;
 }
 
 section.faqs .faqs-content h2 {
   font-size: 21px;
   max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: #fdcc52;
 }
 
 section.faqs .faqs-content h4 {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   max-width: 450px;
   color: #222222;
 }
 
 @media (min-width: 768px) {
-  section.faqs .faqs-content p {
+  section.faqs .faqs-content ul li, section.faqs .faqs-content p {
     font-size: 14px;
   }
   section.faqs .faqs-content h2 {

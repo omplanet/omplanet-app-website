@@ -8,28 +8,28 @@ section.faqs {
         position: relative;
         z-index: 1;
         ul li, p {
-            font-size: 15px;
+            font-size: 14px;
             max-width: 550px;
             margin-top: 0;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
             color: $gray-darker;
         }
         h2 {
             font-size: 21px;
             max-width: 450px;
-            margin-top: 0;
-            margin-bottom: 25px;
+            margin-top: 20px;
+            margin-bottom: 15px;
             color: $theme-primary;
         }
         h4 {
-            font-size: 18px;
-            margin-top: 0;
-            margin-bottom: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             max-width: 450px;
             color: $gray-darker;
         }
         @media (min-width: 768px) {
-            p {
+            ul li, p {
                 font-size: 14px;
             }
             h2 {
