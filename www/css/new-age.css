@@ -180,16 +180,15 @@ section h2 {
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
   color: white;
 }
 
 header.masthead .header-content {
   max-width: 500px;
-  margin-bottom: 100px;
   padding: 20px;
-  background-color: rgba(183, 155, 141, 0.7);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(183, 155, 141, 0.88);
   border-radius: 9px;
   text-align: left;
 }
@@ -203,19 +202,50 @@ header.masthead .header-content h1 {
   margin-bottom: 0px;
 }
 
-header.masthead .device-container {
-  max-width: 325px;
-  margin-right: auto;
-  margin-left: auto;
+header.masthead .device {
+  margin-top: 40px;
 }
 
-header.masthead .device-container .screen img {
-  border-radius: 3px;
+header.masthead .badges {
+  text-align: center;
+}
+
+header.masthead .badges .badge-link {
+  display: block;
+  margin-bottom: 25px;
+}
+
+header.masthead .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+header.masthead .badges .badge-link img {
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  header.masthead .badges .badge-link {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+header.masthead .badges-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  header.masthead .badges-title {
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 4px #491D12;
+  }
 }
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
@@ -607,7 +637,7 @@ section.timeline .timeline-content .timeline-description {
   font-style: italic;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section.timeline .timeline-content {
     height: 1522px;
   }

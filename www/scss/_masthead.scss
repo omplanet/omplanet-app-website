@@ -3,16 +3,16 @@ header.masthead {
     position: relative;
 
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 70px;
 
     color: white;
     .header-content {
         max-width: 500px;
-        margin-bottom: 100px;
         padding: 20px;
 
-        background-color: rgba(#B79B8D, .7);
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        background-color: rgba(#B79B8D, .88);
         border-radius: 9px;
 
         text-align: left;
@@ -25,16 +25,40 @@ header.masthead {
 
         }
     }
-    .device-container {
-        max-width: 325px;
-        margin-right: auto;
-        margin-left: auto;
-        .screen img {
-            border-radius: 3px;
+    .device {
+        margin-top: 40px;
+    }
+    .badges {
+        text-align: center;
+        .badge-link {
+            display: block;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                height: 60px;
+            }
+            @media(min-width: 768px) {
+                display: inline-block;
+                margin-bottom: 0;
+            }
         }
     }
+
+    .badges-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+        color: black;
+
+        @media(min-width: 768px) {
+            font-size: 22px;
+            color: white;
+            text-shadow: 2px 2px 4px #491D12;
+        }
+    }
+
     @media (min-width: 992px) {
-        height: 100vh;
         min-height: 775px;
         padding-top: 0;
         padding-bottom: 0;
