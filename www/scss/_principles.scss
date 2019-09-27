@@ -15,7 +15,7 @@ section.principles {
             color: $gray-darker;
         }
         h2 {
-            font-size: 21px;
+            font-size: 20px;
             max-width: 450px;
             margin-top: 0;
             margin-bottom: 25px;
@@ -27,22 +27,15 @@ section.principles {
             margin-bottom: 5px;
             color: $gray-darker;
         }
-        ul.platonic_icons li {
-            display: inline-block;
-            padding: 0 1em 0 0;
-        }
-        .platonic_icons img {
-            height: 35px;
-        }
         @media (min-width: 768px) {
-            p {
-                font-size: 12px;
+            ul li, p {
+                font-size: 15px;
             }
             h2 {
-                font-size: 18px;
+                font-size: 20px;
             }
             h4 {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }

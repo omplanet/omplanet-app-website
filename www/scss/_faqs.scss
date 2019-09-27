@@ -15,25 +15,25 @@ section.faqs {
             color: $gray-darker;
         }
         h2 {
-            font-size: 21px;
+            font-size: 20px;
             max-width: 450px;
             margin-top: 20px;
             margin-bottom: 15px;
             color: $theme-primary;
         }
         h4 {
-            font-size: 16px;
+            font-size: 15px;
             margin-top: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             max-width: 450px;
             color: $gray-darker;
         }
         @media (min-width: 768px) {
             ul li, p {
-                font-size: 14px;
+                font-size: 15px;
             }
             h2 {
-                font-size: 18px;
+                font-size: 20px;
             }
             h4 {
                 font-size: 16px;

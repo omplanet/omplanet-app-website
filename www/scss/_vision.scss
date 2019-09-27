@@ -21,7 +21,7 @@ section.vision {
             border-radius: 9px;
         }
         h2 {
-            font-size: 22px;
+            font-size: 20px;
             max-width: 450px;
             margin-top: 0;
             margin-left: 10px;
@@ -29,20 +29,20 @@ section.vision {
             color: $theme-primary;
         }
         h4 {
-            font-size: 16px;
+            font-size: 15px;
             margin-top: 0;
             margin-left: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             max-width: 450px;
             color: white;
             text-shadow: 2px 2px 4px #707481;
         }
         @media (min-width: 768px) {
             p {
-                font-size: 14px;
+                font-size: 15px;
             }
             h2 {
-                font-size: 16px;
+                font-size: 22px;
             }
             h4 {
                 font-size: 16px;

@@ -117,3 +117,14 @@
     padding: 4px;
     text-shadow: 2px 2px 4px #491D12;
 }
+
+@media(min-width: 992px) {
+    #planet_container .planet-title {
+        font-size: 30px;
+            margin-bottom: 5px;
+    }
+
+    #planet_container .planet-subtitle {
+        font-size: 24px;
+    }
+}

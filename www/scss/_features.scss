@@ -1,32 +1,16 @@
 // Styling for the features section
 section.features {
-    background-color: $theme-primary;
-    color: white;
+    background-color: #FFFFFF;
+    color: black;
 
     .section-heading {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         h2 {
-            font-size: 20px;
-            margin-top: 0;
-        }
-        p {
-            font-size: 15px;
-            margin-bottom: 0;
-        }
-    }
-
-    @media(min-width: 992px) {
-        .container {
-            background:-moz-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
-            background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
-            background:radial-gradient(ellipse at center,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
-        }
-        h2 {
-            font-size: 22px;
-            margin-top: 0;
-        }
-        p {
             font-size: 18px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 14px;
             margin-bottom: 0;
         }
     }
@@ -37,30 +21,82 @@ section.features {
         margin: 0 auto;
     }
     .device-container {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         @media(min-width: 992px) {
             margin-bottom: 0;
         }
     }
     .feature-item {
-        padding-top: 40px;
-        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 30px;
         text-align: center;
         h3 {
-            font-size: 20px;
+            font-size: 16px;
+            color: #C78C00;
         }
         p {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 0;
         }
         i {
-            font-size: 80px;
+            font-size: 40px;
             display: block;
             margin-bottom: 15px;
-            background: -webkit-linear-gradient(to left, $theme-primary, #fff);
-            background: linear-gradient(to left, $theme-primary, #fff);
+            background: -webkit-linear-gradient(to left, #fff6a8, #C78C00);
+            background: linear-gradient(to left, #fff6a8, #C78C00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+    }
+
+    @media(min-width: 768px) {
+        .section-heading {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+
+        .feature-item {
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+            i {
+                font-size: 60px;
+            }
+        }
+    }
+
+    @media(min-width: 992px) {
+        .container {
+            background:-moz-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+            background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+            background:radial-gradient(ellipse at center,rgba(255,255,255,0.3) 0,rgba(0,0,0,0) 60%);
+        }
+        .section-heading {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+        .feature-item {
+            padding-top: 40px;
+            padding-bottom: 00px;
+            p {
+                font-size: 16px;
+            }
+            i {
+                font-size: 80px;
+            }
         }
     }
 }
