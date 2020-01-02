@@ -327,9 +327,9 @@ header.masthead .badges-title {
   right: 0;
   bottom: 0;
   opacity: .6;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, transparent 60%);
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, transparent 60%);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6) 0, transparent 60%);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, rgba(0, 0, 0, 0) 60%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.6) 0, rgba(0, 0, 0, 0) 60%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6) 0, rgba(0, 0, 0, 0) 60%);
 }
 
 #canvas_container {
@@ -520,9 +520,9 @@ section.features .feature-item i {
 
 @media (min-width: 992px) {
   section.features .container {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0, transparent 60%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0, transparent 60%);
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0, transparent 60%);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0, rgba(0, 0, 0, 0) 60%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0, rgba(0, 0, 0, 0) 60%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0, rgba(0, 0, 0, 0) 60%);
   }
   section.features .section-heading h2 {
     font-size: 20px;
